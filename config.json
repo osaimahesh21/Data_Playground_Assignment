@@ -1,0 +1,42 @@
+{
+  "paths": {
+    "output_folder": "/Users/saimaheshobillaneni/Documents/data",
+    "tracker_file": "/Users/saimaheshobillaneni/Documents/data/id_tracker.json"
+  },
+  "data_settings": {
+    "num_rows_per_table": 500
+  },
+  "bronze_layer_input": {
+    "base_path": "/Users/saimaheshobillaneni/Documents/data",
+    "data_types": [
+      "raw_customers",
+      "raw_order_items",
+      "raw_orders",
+      "raw_products"
+    ],
+    "date_folder": "20250207"
+  },
+  "bronze_layer_output": "/Users/saimaheshobillaneni/Documents/data/bronze_layer_output",
+  "silver_layer_input": {
+    "base_path": "/Users/saimaheshobillaneni/Documents/data/bronze_layer_output",
+    "refined_data_types": [
+      "refined_customers",
+      "refined_order_items",
+      "refined_orders",
+      "refined_products"
+    ],
+    "date_folder": "20250207"
+  },
+  "silver_layer_output": "/Users/saimaheshobillaneni/Documents/data/silver_layer_output",
+  "gold_layer_input": {
+    "base_path": "/Users/saimaheshobillaneni/Documents/data/silver_layer_output",
+    "data_types": [
+      "customers",
+      "order_items",
+      "orders",
+      "products"
+    ],
+    "date_folder": "20250207"
+  },
+  "gold_layer_output": "/Users/saimaheshobillaneni/Documents/data/gold_layer_output"
+}
