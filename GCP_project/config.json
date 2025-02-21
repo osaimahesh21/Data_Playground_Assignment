@@ -1,0 +1,18 @@
+{
+  "gcs_bucket": "raw-data-generated-by-script",
+  "paths": {
+    "base_folder": "data",
+    "tracker_file": "data/id_tracker.json"
+  },
+  "bronze_layer_input": {
+    "base_path": "data",
+    "data_types": [
+      "raw_customers",
+      "raw_order_items",
+      "raw_orders",
+      "raw_products"
+    ],
+    "date_folder": "20250221"
+  },
+  "bronze_layer_output": "data/refined_data"
+}
